@@ -1,0 +1,82 @@
+test-abs {
+	test: 10px;
+	test: 0;
+	test: 10px;
+}
+
+test-ceil {
+	test: -10px;
+	test: -10px;
+	test: -10px;
+	test: 0;
+	test: 0;
+	test: 0;
+	test: 1;
+	test: 1;
+	test: 1;
+	test: 11px;
+	test: 11px;
+	test: 11px;
+}
+
+test-floor {
+	test: -11px;
+	test: -11px;
+	test: -11px;
+	test: -1;
+	test: -1;
+	test: -1;
+	test: 0;
+	test: 0;
+	test: 0;
+	test: 10px;
+	test: 10px;
+	test: 10px;
+}
+
+test-max {
+	test: -5px;
+	test: 0;
+	test: 5px;
+	test:  5px;
+}
+
+test-min {
+	test: -5px;
+	test: 0;
+	test: 5px;
+	test: -5px;
+}
+
+test-percentage {
+	test: -50%;
+	test: -50%;
+	test: -50%;
+	test: -50%;
+	test: -50%;
+	test: -50%;
+	test: 50%;
+	test: 50%;
+	test: 50%;
+	test: 50%;
+	test: 50%;
+	test: 50%;
+	test: 50%;
+}
+
+test-random {
+	test: 0;
+}
+
+test-round {
+	test: 0;
+	test: 1;
+	test: 1;
+	test: 10px;
+	test: 11px;
+	test: 11px;
+}
+
+test-all {
+	test:  7;
+}

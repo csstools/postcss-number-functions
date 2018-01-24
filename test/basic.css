@@ -1,0 +1,82 @@
+test-abs {
+	test: abs(-10px);
+	test: abs(0);
+	test: abs(10px);
+}
+
+test-ceil {
+	test: ceil(-10.6px);
+	test: ceil(-10.5px);
+	test: ceil(-10.4px);
+	test: ceil(-0.6);
+	test: ceil(-0.5);
+	test: ceil(-0.4);
+	test: ceil(0.4);
+	test: ceil(0.5);
+	test: ceil(0.6);
+	test: ceil(10.4px);
+	test: ceil(10.5px);
+	test: ceil(10.6px);
+}
+
+test-floor {
+	test: floor(-10.6px);
+	test: floor(-10.5px);
+	test: floor(-10.4px);
+	test: floor(-0.6);
+	test: floor(-0.5);
+	test: floor(-0.4);
+	test: floor(0.4);
+	test: floor(0.5);
+	test: floor(0.6);
+	test: floor(10.4px);
+	test: floor(10.5px);
+	test: floor(10.6px);
+}
+
+test-max {
+	test: max(-5px);
+	test: max(0);
+	test: max(5px);
+	test: max(-5px, 0, 5px);
+}
+
+test-min {
+	test: min(-5px);
+	test: min(0);
+	test: min(5px);
+	test: min(-5px, 0, 5px);
+}
+
+test-percentage {
+	test: percentage(-50vw / 100vw);
+	test: percentage(-50vh / 100vh);
+	test: percentage(-50rem / 100rem);
+	test: percentage(-50em / 100em);
+	test: percentage(-50px / 100px);
+	test: percentage(-0.5);
+	test: percentage(0.5);
+	test: percentage(50px / 100px);
+	test: percentage(50em / 100em);
+	test: percentage(50rem / 100rem);
+	test: percentage(50rem / 100rem);
+	test: percentage(50vh / 100vh);
+	test: percentage(50vw / 100vw);
+}
+
+test-random {
+	test: floor(random());
+}
+
+test-round {
+	test: round(0.4);
+	test: round(0.5);
+	test: round(0.6);
+	test: round(10.4px);
+	test: round(10.5px);
+	test: round(10.6px);
+}
+
+test-all {
+	test: floor(min(max(floor(random()), 1, 3), 5) * 2.5);
+}
